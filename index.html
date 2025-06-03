@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
   <head>
-    <meta http-equiv="refresh" content="0; url=5FF16F5E-96AA-455D-B349-F260B22E0DE6.png" />
+    <meta charset="UTF-8" />
+    <title>圖片下載中...</title>
   </head>
   <body>
-    <a href="5FF16F5E-96AA-455D-B349-F260B22E0DE6.png" download>點我下載圖片（如果沒有自動下載）</a>
+    <h1>正在為您下載圖片...</h1>
+    <script>
+      const link = document.createElement("a");
+      link.href = "5FF16F5E-96AA-455D-B349-F260B22E0DE6.png";
+      link.download = "5FF16F5E-96AA-455D-B349-F260B22E0DE6.png";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    </script>
+    <p>如果沒有自動下載，<a href="5FF16F5E-96AA-455D-B349-F260B22E0DE6.png" download>點這裡手動下載</a></p>
   </body>
 </html>
